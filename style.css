@@ -1,0 +1,23 @@
+@import url(/styles/header.css);
+@import url(/styles/conteúdo.css);
+@import url(/styles/carroselstylein.css);
+@import url(/styles/rodape.css);
+
+
+:root {
+    --cor-azul: #001930;
+    --cor-azul-claro: #052e53;
+    --cor-fundo: #f0e4ce;
+    --cor-dourado: #D4AF37;
+    --cor-cinza-escuro: darkgrey;
+    --cor-branco: rgb(243, 235, 235);
+    --fonte-principal: "Outfit", sans-serif;
+    --fonte-secundária: "PT Serif", serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-azul);
+    font-family: var(--fonte-principal);
+    overflow-x: hidden;
+}

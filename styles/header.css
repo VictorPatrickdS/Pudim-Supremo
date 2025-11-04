@@ -1,0 +1,147 @@
+
+.cabecalho {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(/img/planodefundo.png);
+    padding: 1% 5% 1% 2%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    z-index: 1000;
+}
+
+.logoImg {
+    width: 7em;
+    height: 7em;
+}
+
+.lista-menu {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    padding-top: 6em;
+}
+
+.lista-menu__itens {
+    display: flex;
+    border-left: solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fonte-secundária);
+    color: var(--cor-dourado);
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+}
+
+.lista-menu__itens:hover {
+    color: var(--cor-cinza-escuro);
+}
+
+.logoCelular{
+    display: none;
+}
+
+.contato-item {
+    display: none;
+}
+
+.checkbox__menuHamburguer{
+    display: none;
+}
+
+.lista__menuHamburguer{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .lista-menu{
+        gap: 3em;
+    }
+
+    .lista-menu__itens {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .cabecalho{
+        justify-content: space-between;
+    }
+
+    .logoImg{
+        display: none;
+    }
+
+    .logoCelular{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .imgLogoCelular{
+        height: 60px;
+    }
+
+    .tituloLogo{
+        font-size: 1.5rem;
+        font-family: var(--fonte-secundária);
+        font-weight: 400;
+        color: var(--cor-dourado);
+    }
+
+    .checkbox__menuHamburguer{
+        display: block;
+    }
+
+    .lista__menuHamburguer{
+        display: block;
+    }
+
+    .contato-item {
+        display: flex;
+    }
+
+    .lista__menuHamburguer {
+        position: absolute;
+        bottom: 1.25em;
+        left: 1em;
+    }
+
+    .checkbox__menuHamburguer {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+    }
+
+    .lista-menu {
+        background-image: url(/img/planodefundo.png);
+        padding: 1em;
+        border-top: 3px double var(--cor-dourado);
+        display: flex; 
+        flex-direction: column;
+        align-items: initial ;
+        gap: 2em;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .lista-menu__itens {
+        font-size: 1.5rem;
+        border-bottom: solid;
+    }
+
+    .checkbox__menuHamburguer:checked ~ .lista-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    }
+
+    

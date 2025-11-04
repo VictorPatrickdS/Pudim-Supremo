@@ -1,0 +1,127 @@
+/* section 1 */
+
+.swiper{
+    width: 800px;
+    
+}
+
+.swiper-pagination{
+    margin-bottom: 1em;
+    --swiper-pagination-color: var(--cor-azul);
+    --swiper-pagination-bullet-size: 10px;
+    opacity: 0.5;
+}
+
+.swiper-button-prev,.swiper-button-next{
+    padding: 0.5em 0 ;
+    border-radius: 20px;
+    --swiper-navigation-color: var(--cor-branco);
+    background-color: black;
+    opacity: 0.1;
+}
+
+.swiper-button-prev:hover,.swiper-button-next:hover{
+    opacity: 0.4;
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    border: 15px groove var(--cor-dourado);
+    border-radius: 10px;
+    background-color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide:hover , .tipo-pudim:hover{
+    border-color: var(--cor-cinza-escuro) ;
+}
+
+.slide-link{
+    text-decoration: none;
+}
+
+.titulo-slide{
+    background-image: url(/img/planodefundo.png);
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--fonte-secundária);
+    text-align: center;
+    padding: 0.5em 0;
+    color: var(--cor-cinza-escuro);
+}
+
+.tipo-pudim{
+    border-top: 10px groove var(--cor-dourado);
+    background-color: var(--cor-fundo);
+    padding: 3em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.img-pudim{
+    width: 50%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+.descrição-pudim{
+    color: var(--cor-azul);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 1.5em;
+}
+
+.nome-pudim{
+    font-size: 2rem;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px){
+    .swiper{
+        width: 100%;
+        
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 450px){
+    .swiper{
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
+        
+    }
+    
+    .swiper-pagination{
+        margin-bottom: -0.2em;
+    }
+    
+    .swiper-slide {
+        border: none; 
+    }
+    
+    .titulo-slide{
+        border-top: 15px groove var(--cor-dourado);
+        border-bottom: 15px groove var(--cor-dourado);
+        
+    }
+
+    .tipo-pudim{
+        border: none;
+        flex-direction: column;
+        padding: 2em 0;
+        gap: 1em;
+    }
+
+    .img-pudim{
+        width: 90%;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+    }
+
+    .txt-pudim{
+        display: none;
+    }
+}
