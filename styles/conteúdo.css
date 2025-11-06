@@ -5,7 +5,7 @@ main {
     
 }
 
-.elementosColunaDeInformacoes{
+.elementos-coluna-informacoes{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ main {
     font-weight: 200;
 }
 
-.criar-receita__link:hover, .linkRedesSociais:hover{
+.criar-receita__link:hover, .link__botoes-redes-sociais:hover{
     font-size: 140%;
     border-color: var(--cor-cinza-escuro);
 }
@@ -80,26 +80,19 @@ main {
 
 /* section 3 */
 
-.meiosDeContato{
+.meios-contato{
     padding: 10% 0;
     display: flex;
     align-items: center;
     gap: 2em;
 }
 
-.elementos-coluna__meiosDeContato{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
-
-.botoesRedesSociais{
+.botoes-redes-sociais{
     display: flex;
     gap: 1em;
 }
 
-.linkRedesSociais{
+.link__botoes-redes-sociais{
     text-decoration: none;
     font-size: 1.25rem;
     color: var(--cor-dourado);
@@ -113,23 +106,19 @@ main {
     gap: 0.5em;
 }
 
-.mapaLocalizacao{
+.mapa-localizacao{
     border: 15px groove var(--cor-dourado);
     border-radius: 10px;
     height: 25em;
     width: 50%;
 }
 
-.botoesRedesSociaiscell{
-    display: none;
-}
-
 @media screen and (max-width: 1024px) {
-    .conteudo {
+    main {
         padding-top: 14em;
     }
 
-    .elementosColunaDeInformacoes{
+    .elementos-coluna-informacoes{
      width: 100%;
     }
 
@@ -148,17 +137,17 @@ main {
     
 
 /* section 3 */
-    .meiosDeContato{
+    .meios-contato{
        flex-direction: column;
     }
 
-    .mapaLocalizacao{
+    .mapa-localizacao{
         width: 100%;
     }
 }
 
 @media screen and (max-width: 450px){
-    .conteudo {
+    main {
         padding-top: 6em;
     }
 
@@ -185,20 +174,20 @@ main {
     }
 
 /* section 3 */
-    .botoesRedesSociais{
+    .botoes-redes-sociais{
         margin: 0 auto;
         gap: 3em;
     }
 
-    .linkRedesSociais{
+    .link__botoes-redes-sociais{
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
     }
 
-    .txt__linkRedesSociais{
+    .txt__link__botoes-redes-sociais{
         display: none;
     }
 
-    .mapaLocalizacao{
+    .mapa-localizacao{
         height: 15em;
         width: 90%;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
