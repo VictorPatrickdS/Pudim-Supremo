@@ -14,16 +14,19 @@
     
 }
 
-.coluna_card-tipos-produto {
+.lista_card-tipos-produto {
+    margin: 0 1em;
     display: flex;
-    flex-direction: column;
-    gap: 3em;
+    flex-wrap: wrap;
+    
 }
 
-.linha_card-tipos-produto {
-    margin: 0 2em;
+.itens_lista_card-tipos-produto {
     display: flex;
-    gap: 3em;
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+    margin: 1.5em 0.6em 1.5em 0;
+    cursor: pointer;
 }
 
 .card-tipos-produto {
@@ -32,7 +35,6 @@
     border: none;
     display: flex;
     gap: 2em;
-    
 }
 
 .card-tipos-produto:hover {
