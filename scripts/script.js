@@ -1,12 +1,10 @@
-import {listaClassicos} from './criarProduto.js'
-import {listaEspeciais} from './criarProduto.js'
-import {listaPremium} from './criarProduto.js'
-import {listaBebidas} from './criarProduto.js'
+import {listaProdutos} from './criarProduto.js'
 import {iniciarCarrosel} from './carousel.js'
 
-listaClassicos()
-listaEspeciais()
-listaPremium()
-listaBebidas()
+listaProdutos('classicos','lista_classicos')
+listaProdutos('especiais','lista_especiais')
+listaProdutos('premium','lista_premium')
+listaProdutos('bebidas','lista_bebidas')
+
 
 iniciarCarrosel()

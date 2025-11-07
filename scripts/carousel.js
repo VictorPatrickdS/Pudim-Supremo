@@ -27,7 +27,7 @@ async function criarSlidePopulares(){
     const puxarProdutos = await criarArrayProduto()
     
     const produtosOrdenados = [...puxarProdutos].sort((a,b) =>{return b.vendidos - a.vendidos;})
-    const maisVendidos = produtosOrdenados.slice(0,3)
+    const maisVendidos = produtosOrdenados.slice(0,4)
 
     return criarSlide(maisVendidos,"slide__pudim-populares",'Mais Populares')
     
@@ -45,7 +45,7 @@ async function criarSlideExclusivos(){
 }
 
 export async function iniciarCarrosel(){
-    try {
+    
         await criarSlidePopulares()
         await criarSlideExclusivos()
     
@@ -74,13 +74,6 @@ export async function iniciarCarrosel(){
             prevEl: '.swiper-button-prev',
         },
     })
-    } catch (error) {
-        alert('Deu ruim')
-    }
+    
 }
-
-iniciarCarrosel()
-
-
-
 
