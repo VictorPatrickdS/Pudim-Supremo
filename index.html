@@ -19,7 +19,7 @@
             <input class="checkbox__menu-hamburguer" type="checkbox" id="menu-hamburguer">
             <label class="icone__menu-hamburguer" for="menu-hamburguer"><img src="img/Menu Aberto.png" alt="Menu"></label>
             <ul class="lista__menu-hamburguer">
-                <li><a class="itens__lista__menu-hamburguer" href="NossosPudins.html">Nossos Pudins</a></li>
+                <li><a class="itens__lista__menu-hamburguer" href="nossosPudins.html">Nossos Pudins</a></li>
                 <li><a class="itens__lista__menu-hamburguer" href="#">Crie a sua receita</a></li>
                 <li><a class="itens__lista__menu-hamburguer" href="#">Nossa História</a></li>
                 <li><a class="itens__lista__menu-hamburguer" href="#">Contato</a></li>
@@ -42,32 +42,7 @@
             </div>
             <!-- começo carrosel -->
             <div class="swiper carousel-apresentacao">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="slide-link" href="#">
-                            <h2 class="titulo-slide">Mais Populares</h2>
-                            <div class="tipo-pudim">
-                                <img class="img-pudim" src="img/pudim.png" alt="Pudim tradicional">
-                                <div class="descrição-pudim">
-                                    <h3 class="nome-pudim">Tradicional</h3>
-                                    <p class="txt-pudim">Simplesmente perfeito. Um pudim com a textura lisa, sem furinhos, que desmancha na boca. A doçura na medida certa, acentuada pela rica e brilhante calda de caramelo. O final de toda refeição.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="slide-link" href="#">
-                            <h2 class="titulo-slide">Mais Populares</h2>
-                            <div class="tipo-pudim">
-                                <img class="img-pudim" src="img/pudim.png" alt="Pudim tradicional">
-                                <div class="descrição-pudim">
-                                    <h3 class="nome-pudim">Tradicional</h3>
-                                    <p class="txt-pudim">Simplesmente perfeito. Um pudim com a textura lisa, sem furinhos, que desmancha na boca. A doçura na medida certa, acentuada pela rica e brilhante calda de caramelo. O final de toda refeição.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <div id="slide__pudim-populares" class="swiper-wrapper"></div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -80,32 +55,7 @@
         <section class="criar-receita">
             <!-- começo carrosel -->
             <div class="swiper carousel-criar_receita">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="slide-link" href="#">
-                            <h2 class="titulo-slide">Receitas Exclusivas</h2>
-                            <div class="tipo-pudim">
-                                <img class="img-pudim" src="img/pudim.png" alt="Pudim tradicional">
-                                <div class="descrição-pudim">
-                                    <h3 class="nome-pudim">Tradicional</h3>
-                                    <p class="txt-pudim">Simplesmente perfeito. Um pudim com a textura lisa, sem furinhos, que desmancha na boca. A doçura na medida certa, acentuada pela rica e brilhante calda de caramelo. O final de toda refeição.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="slide-link" href="#">
-                            <h2 class="titulo-slide">Receitas Exclusivas</h2>
-                            <div class="tipo-pudim">
-                                <img class="img-pudim" src="img/pudim.png" alt="Pudim tradicional">
-                                <div class="descrição-pudim">
-                                    <h3 class="nome-pudim">Tradicional</h3>
-                                    <p class="txt-pudim">Simplesmente perfeito. Um pudim com a textura lisa, sem furinhos, que desmancha na boca. A doçura na medida certa, acentuada pela rica e brilhante calda de caramelo. O final de toda refeição.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <div id="slide__pudim-exclusivos" class="swiper-wrapper"></div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -143,6 +93,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="scripts/carousel.js"></script>
+    <script type="module" src="scripts/script.js"></script>
 </body>
 </html>

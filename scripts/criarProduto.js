@@ -1,19 +1,21 @@
 import {buscarPlanilha} from './carregarPlanilha.js' 
 
-async function criarArrayProduto(){
+export async function criarArrayProduto(){
     const dadosPlanilha = await buscarPlanilha()
     const produtosDB = []
         
     for(const dadosProdutos of dadosPlanilha){
         if(dadosProdutos){
-            const [id, nome,img,descricao,categoria] = dadosProdutos.split('\t')
+            const [id, nome,img,descricao,categoria,preco,vendidos] = dadosProdutos.split('\t')
         
             produtosDB.push({
                 id: id,
                 nome: nome,
                 img: img,
                 descricao: descricao,
-                categoria: categoria.trim()
+                categoria: categoria,
+                preco: preco.trim(),
+                vendidos: parseInt(vendidos)
             })
         }
     }
@@ -27,16 +29,16 @@ function criarCardProduto(listaAdd,arrayFiltrada){
 
     arrayFiltrada.forEach(produto => {
         listaRecebida.innerHTML += 
-        `<li class="itens_lista_card-tipos-produto">
-            <button class="card-tipos-produto">
-                <img class="img_card-tipos-produto" src="${produto.img}" alt="Foto ${produto.nome}">
-                <div class="descricao_card-tipos-produto">
-                    <h3 class="titulo_descricao_card-tipos-produto">${produto.nome}</h3>
-                    <p class="txt_descricao_card-tipos-produto">${produto.descricao}</p>
-                    <p class="preco_descricao_card-tipos-produto">R$ 50,00</p>
-                </div>
-            </button>
-        </li>`
+            `<li class="itens_lista_card-tipos-produto">
+                <button class="card-tipos-produto">
+                    <img class="img_card-tipos-produto" src="${produto.img}" alt="Foto ${produto.nome}">
+                    <div class="descricao_card-tipos-produto">
+                        <h3 class="titulo_descricao_card-tipos-produto">${produto.nome}</h3>
+                        <p class="txt_descricao_card-tipos-produto">${produto.descricao}</p>
+                        <p class="preco_descricao_card-tipos-produto">R$ ${produto.preco}</p>
+                    </div>
+                </button>
+            </li>`
     });
 }
 
