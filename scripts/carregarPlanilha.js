@@ -11,4 +11,3 @@ export async function buscarPlanilha() {
         alert('Dados não encontrados')
     }
 }
-    

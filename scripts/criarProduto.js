@@ -50,13 +50,32 @@ export async function listaClassicos(){
     return criarCardProduto('lista_classicos', produtosClassicos)
 }
 
-listaClassicos()
+export async function listaEspeciais(){
+    const produtos = await criarArrayProduto()
 
+    const produtosEspeciais = produtos.filter( produtosDB => {
+        return produtosDB.categoria.trim().toLowerCase() === 'especiais';
+    });
 
+    return criarCardProduto('lista_especiais', produtosEspeciais)
+}
 
+export async function listaPremium(){
+    const produtos = await criarArrayProduto()
 
-            
+    const produtosPremium = produtos.filter( produtosDB => {
+        return produtosDB.categoria.trim().toLowerCase() === 'premium';
+    });
 
+    return criarCardProduto('lista_premium', produtosPremium)
+}
 
+export async function listaBebidas(){
+    const produtos = await criarArrayProduto()
 
+    const produtosBebidas = produtos.filter( produtosDB => {
+        return produtosDB.categoria.trim().toLowerCase() === 'bebidas';
+    });
 
+    return criarCardProduto('lista_bebidas', produtosBebidas)
+}
