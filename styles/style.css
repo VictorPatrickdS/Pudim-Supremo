@@ -1,8 +1,8 @@
 @import url(/styles/header.css);
-@import url(/styles/conteúdo.css);
-@import url(/styles/carroselstylein.css);
 @import url(/styles/rodape.css);
-@import url(/styles/nossosPudins.css);
+@import url(/styles/styleHomePage/conteúdo.css);
+@import url(/styles/styleHomePage/carroselstylein.css);
+@import url(/styles/styleNossosPudins/nossosPudins.css);
 
 
 :root {
@@ -14,6 +14,10 @@
     --cor-branco: rgb(243, 235, 235);
     --fonte-principal: "Outfit", sans-serif;
     --fonte-secundária: "PT Serif", serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

@@ -1,10 +1,20 @@
 import {listaProdutos} from './criarProduto.js'
+import {abreMenuPrecos} from './tabelaPrecos.js'
 import {iniciarCarrosel} from './carousel.js'
 
-listaProdutos('classicos','lista_classicos')
-listaProdutos('especiais','lista_especiais')
-listaProdutos('premium','lista_premium')
-listaProdutos('bebidas','lista_bebidas')
+async function iniciarSite() {
+    await listaProdutos('classicos','lista_classicos')
+    await listaProdutos('especiais','lista_especiais')
+    await listaProdutos('premium','lista_premium')
+    await listaProdutos('bebida','lista_bebidas')
+
+    abreMenuPrecos()
+
+    iniciarCarrosel()
+
+}
+
+iniciarSite()
 
 
-iniciarCarrosel()
+

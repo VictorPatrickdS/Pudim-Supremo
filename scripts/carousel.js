@@ -5,13 +5,13 @@ import {criarArrayProduto} from './criarProduto.js'
 function criarSlide(arrayProdutos, idCarrosel, titulo){
     const slideCarrosel = document.getElementById(idCarrosel)
 
-    arrayProdutos.forEach(produto => {
-        slideCarrosel.innerHTML +=
-            `<div class="swiper-slide">
-                <a class="slide-link" href="#">
+    const carroselHTML = arrayProdutos.map(produto => {
+        return `
+            <div class="swiper-slide">
+                <a class="slide-link" href="nossosPudins.html">
                     <h2 class="titulo-slide">${titulo}</h2>
                     <div class="tipo-pudim">
-                        <img class="img-pudim" src="${produto.img}" alt="Foto ${produto.nome}">
+                        <img class="img-pudim" src="${produto.img}" alt="Foto ${produto.nome}" height="180px" width="180px">
                         <div class="descrição-pudim">
                             <h3 class="nome-pudim">${produto.nome}</h3>
                             <p class="txt-pudim">${produto.descricao}</p>
@@ -19,14 +19,21 @@ function criarSlide(arrayProdutos, idCarrosel, titulo){
                     </div>
                 </a>
             </div>`
-    });
+    }).join('');
+
+    slideCarrosel.innerHTML = carroselHTML
+    
 }
 
 async function criarSlidePopulares(){
 
     const puxarProdutos = await criarArrayProduto()
+
+    const filtroBebidas = puxarProdutos.filter( produtosDB => {
+        return produtosDB.categoria.toLowerCase() !== 'bebida';
+    })
     
-    const produtosOrdenados = [...puxarProdutos].sort((a,b) =>{return b.vendidos - a.vendidos;})
+    const produtosOrdenados = [...filtroBebidas].sort((a,b) =>{return b.vendidos - a.vendidos;})
     const maisVendidos = produtosOrdenados.slice(0,4)
 
     return criarSlide(maisVendidos,"slide__pudim-populares",'Mais Populares')

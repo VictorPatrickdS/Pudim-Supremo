@@ -1,0 +1,20 @@
+@import url(cardsProdutos.css);
+
+.main__nossos-pudins {
+    padding-top: 12em;
+    margin: 0 6%;
+}
+
+.titulo-sessao {
+    font-family: var(--fonte-secundária);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.separacao_card-tipos-produto {
+    margin: .3em 0 1em 0;
+}
+
+.separacao_sessoes {
+    margin: 1em 0;
+}

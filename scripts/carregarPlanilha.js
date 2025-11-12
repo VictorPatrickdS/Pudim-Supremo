@@ -8,6 +8,6 @@ export async function buscarPlanilha() {
         return dadosGerais
 
     }catch{
-        alert('Dados não encontrados')
+        alert('Planilha não foi encontrada')
     }
 }
