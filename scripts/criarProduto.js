@@ -30,9 +30,9 @@ function criarCardProduto(listaAdd,arrayFiltrada){
 
     const listaRecebida = document.getElementById(listaAdd)
 
-    arrayFiltrada.forEach(produto => {
-        listaRecebida.innerHTML += 
-            `<li class="itens_lista_card-tipos-produto">
+    const criaHTMLCard = arrayFiltrada.map(produto => {
+         return `
+            <li class="itens_lista_card-tipos-produto">
                 <button id="buttom-tabela-precos" class="card-tipos-produto">
                     <div class="informacao-produtos">
                         <img class="img_card-tipos-produto" src="${produto.img}" alt="Foto ${produto.nome}" height="120px" width="120px">
@@ -55,7 +55,9 @@ function criarCardProduto(listaAdd,arrayFiltrada){
                     </div>
                 </div>
             </li>`
-    });
+    }).join('')
+
+    listaRecebida.innerHTML = criaHTMLCard
 }
 
 export async function listaProdutos(categoriaProduto, listaAdicionada) {

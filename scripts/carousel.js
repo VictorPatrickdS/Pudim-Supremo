@@ -19,7 +19,7 @@ function criarSlide(arrayProdutos, idCarrosel, titulo){
                     </div>
                 </a>
             </div>`
-    }).join('');
+    }).join('')
 
     slideCarrosel.innerHTML = carroselHTML
     
@@ -30,7 +30,7 @@ async function criarSlidePopulares(){
     const puxarProdutos = await criarArrayProduto()
 
     const filtroBebidas = puxarProdutos.filter( produtosDB => {
-        return produtosDB.categoria.toLowerCase() !== 'bebida';
+        return produtosDB.categoria.toLowerCase() !== 'bebida'
     })
     
     const produtosOrdenados = [...filtroBebidas].sort((a,b) =>{return b.vendidos - a.vendidos;})

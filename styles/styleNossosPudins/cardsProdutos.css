@@ -31,6 +31,7 @@
     color: var(--cor-dourado);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
     transform: scale(1.02);
+    
 }
 
 .card-tipos-produto:hover {
