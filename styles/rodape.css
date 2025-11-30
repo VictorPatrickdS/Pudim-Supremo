@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.separacao-rodape__nossos-pudins{
+    margin: 10em 0 0 0 ;
+    padding: 0;
+}
+
 .rodape{
     padding: 5em;
     background-image: url(/img/planodefundo.png);
