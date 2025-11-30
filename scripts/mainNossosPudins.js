@@ -1,6 +1,6 @@
 import {listaProdutos} from './criarProduto.js'
 import {abreMenuPrecos} from './tabelaPrecos.js'
-
+import {ativarCampoPesquisa} from './campoPesquisaProdutos.js'
 
 async function iniciarNossosPudins() {
     await listaProdutos('classicos','lista_classicos')
@@ -9,6 +9,8 @@ async function iniciarNossosPudins() {
     await listaProdutos('bebida','lista_bebidas')
 
     abreMenuPrecos()
+
+    ativarCampoPesquisa()
 }
 
 iniciarNossosPudins()

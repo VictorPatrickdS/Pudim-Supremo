@@ -1,6 +1,7 @@
 @import url(cardsProdutos.css);
 
 .main__nossos-pudins {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     padding-top: 9.5em;
@@ -38,6 +39,7 @@
 
 .links__menu-categorias:hover{
     color: var(--cor-dourado);
+    border-color: var(--cor-dourado);
 }
 
 #campo-pesquisa-produtos{
@@ -63,6 +65,39 @@
 
 #campo-pesquisa-produtos::-webkit-search-cancel-button{
     -webkit-appearance: none;
+}
+
+.resultado-pesquisa-nao-encontrado{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    display: none;
+}
+
+.txt__Resultado-pesquisa-nao-encontrado{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.resultado-pesquisa-encontrado{
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.txt__Resultado-pesquisa-encontrado{
+    font-size: 2rem;
+}
+
+.active{
+    display: flex;
+}
+
+.esconder{
+    display: none;
 }
 
 .classicos{

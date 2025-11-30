@@ -26,7 +26,7 @@ export async function criarArrayProduto(){
     return produtosDB
 }
 
-function criarCardProduto(listaAdd,arrayFiltrada){
+export function criarCardProduto(listaAdd,arrayFiltrada){
 
     const listaRecebida = document.getElementById(listaAdd)
 

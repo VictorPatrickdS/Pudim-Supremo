@@ -20,7 +20,6 @@
             <ul class="lista__menu-hamburguer">
                 <li><a class="itens__lista__menu-hamburguer" href="nossosPudins.html">Nossos Pudins</a></li>
                 <li><a class="itens__lista__menu-hamburguer" href="#">Crie a sua receita</a></li>
-                <li><a class="itens__lista__menu-hamburguer" href="#">Nossa História</a></li>
                 <li><a class="itens__lista__menu-hamburguer" href="#">Contato</a></li>
             </ul>
         </nav>
@@ -42,35 +41,48 @@
             </ul>
             <input type="search" placeholder="Busque pelo sabor..." name="campo-pesquisa-produtos" id="campo-pesquisa-produtos">
         </nav>
-        <section id="section-classicos" class="classicos">
-            <h2 class="titulo-sessao">Clássicos</h2>
-                <hr class="separacao_card-tipo-produto">
-            <ul id="lista_classicos" class="lista_card-tipos-produto"></ul>
-        </section>
+        <div class="resultado-pesquisa-nao-encontrado">
+            <img src="img/iconNãoEncontrado.png" alt="Produto não encontrado" height="120px">
+            <p class="txt__Resultado-pesquisa-nao-encontrado">Resultado não encontrado</p>
+        </div>
+
+        <div class="resultado-pesquisa-encontrado">
+            <p class="txt__Resultado-pesquisa-encontrado">Resultados encontrados:</p>
+            <ul class="lista__Resultado-pesquisa-encontrado lista_card-tipos-produto" id="lista__Resultado-pesquisa-encontrado"></ul>
+        </div>
+
+
+        <div class="listas-produtos">
+            <section id="section-classicos" class="classicos">
+                <h2 class="titulo-sessao">Clássicos</h2>
+                    <hr class="separacao_card-tipo-produto">
+                <ul id="lista_classicos" class="lista_card-tipos-produto"></ul>
+            </section>
+
+                <hr class="separacao_sessoes">
+            
+            <section id="section-especiais" class="especiais">
+                <h2 class="titulo-sessao">Especiais</h2>
+                    <hr class="separacao_card-tipos-produto">
+                <ul id="lista_especiais" class="lista_card-tipos-produto"></ul>
+            </section>
+
+                <hr class="separacao_sessoes">
+
+            <section id="section-premium" class="premium">
+                <h2 class="titulo-sessao">Premium</h2>
+                    <hr class="separacao_card-tipos-produto">
+                <ul id="lista_premium" class="lista_card-tipos-produto"></ul>
+            </section>
 
             <hr class="separacao_sessoes">
-         
-        <section id="section-especiais" class="especiais">
-            <h2 class="titulo-sessao">Especiais</h2>
-                <hr class="separacao_card-tipos-produto">
-            <ul id="lista_especiais" class="lista_card-tipos-produto"></ul>
-        </section>
 
-            <hr class="separacao_sessoes">
-
-        <section id="section-premium" class="premium">
-            <h2 class="titulo-sessao">Premium</h2>
-                <hr class="separacao_card-tipos-produto">
-            <ul id="lista_premium" class="lista_card-tipos-produto"></ul>
-        </section>
-
-        <hr class="separacao_sessoes">
-
-        <section id="section-bebidas" class="bebidas">
-            <h2 class="titulo-sessao">Bebidas</h2>
-                <hr class="separacao_card-tipos-produto">
-            <ul id="lista_bebidas" class="lista_card-tipos-produto"></ul>
-        </section>
+            <section id="section-bebidas" class="bebidas">
+                <h2 class="titulo-sessao">Bebidas</h2>
+                    <hr class="separacao_card-tipos-produto">
+                <ul id="lista_bebidas" class="lista_card-tipos-produto"></ul>
+            </section>
+        </div>
 
     </main>
 
