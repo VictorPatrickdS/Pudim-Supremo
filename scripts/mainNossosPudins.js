@@ -1,6 +1,6 @@
-import {listaProdutos} from './criarProduto.js'
-import {abreMenuPrecos} from './tabelaPrecos.js'
-import {ativarCampoPesquisa} from './campoPesquisaProdutos.js'
+import {listaProdutos} from './scriptsNossosPudins/criarProduto.js'
+import {abreMenuPrecos} from './scriptsNossosPudins/tabelaPrecos.js'
+import {ativarCampoPesquisa} from './scriptsNossosPudins/campoPesquisaProdutos.js'
 
 async function iniciarNossosPudins() {
     await listaProdutos('classicos','lista_classicos')

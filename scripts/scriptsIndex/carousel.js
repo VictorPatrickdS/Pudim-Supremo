@@ -1,4 +1,4 @@
-import {criarArrayProduto} from './criarProduto.js'
+import {criarArrayProduto} from '../scriptsNossosPudins/criarProduto.js'
 
 
 

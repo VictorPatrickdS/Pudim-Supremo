@@ -68,7 +68,7 @@
 }
 
 .resultado-pesquisa-nao-encontrado{
-    margin: auto;
+    margin: 8em 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,13 +127,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .main__nossos-pudins {
+        padding-top: 8em;
+    }
+    
     .classicos{
         padding-top: 12em;
     }
 
     .menu-categorias{
         flex-direction: column-reverse;
-        gap: 1em;
+        gap: 2em;
     }
 
     #campo-pesquisa-produtos{
@@ -150,6 +154,14 @@
 
     .lista__menu-hamburguer__categorias{
         gap: 1.5em;
+    }
+
+    .resultado-pesquisa-nao-encontrado{
+        margin-top: 15em;
+    }
+
+    .resultado-pesquisa-encontrado{
+        margin-top: 12em;
     }
 }
 
@@ -211,6 +223,14 @@
 
     #campo-pesquisa-produtos::placeholder{
         left: 40px;
+    }
+
+    .resultado-pesquisa-encontrado{
+        margin-top: 8em;
+    }
+
+    .txt__Resultado-pesquisa-nao-encontrado{
+        text-align: center;
     }
 }
 

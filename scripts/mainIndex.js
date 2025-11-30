@@ -1,4 +1,4 @@
-import {iniciarCarrosel} from './carousel.js'
+import {iniciarCarrosel} from './scriptsIndex/carousel.js'
 
 async function InicarHomePage() {
     await iniciarCarrosel()

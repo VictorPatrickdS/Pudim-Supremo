@@ -1,4 +1,4 @@
-import {buscarPlanilha} from './carregarPlanilha.js' 
+import {buscarPlanilha} from '../carregarPlanilha.js' 
 
 export async function criarArrayProduto(){
     const dadosPlanilha = await buscarPlanilha()
