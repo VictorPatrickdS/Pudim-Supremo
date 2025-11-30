@@ -4,7 +4,12 @@
 }
 
 .rodape{
-    
     padding: 5em;
     background-image: url(/img/planodefundo.png);
+}
+
+@media screen and (max-width: 450px) {
+    .rodape{
+        padding: 2.5em;
+    }
 }

@@ -113,6 +113,7 @@
         flex-direction: column;
         padding: 2em 0;
         gap: 1em;
+        text-align: center;
     }
 
     .img-pudim{

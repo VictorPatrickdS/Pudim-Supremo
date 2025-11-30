@@ -1,8 +1,71 @@
 @import url(cardsProdutos.css);
 
 .main__nossos-pudins {
-    padding-top: 12em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 158px;
     margin: 0 6%;
+    gap: 2em;
+}
+
+.menu-categorias{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 5%;
+    right: 5%;
+    padding: 1em;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: var(--cor-fundo);
+    border-bottom: solid var(--cor-azul) 3px;
+}
+
+.barra-navegacao_menu-categorias{
+    display: flex;
+    gap: 3em;
+}
+
+.links__menu-categorias{
+    text-decoration: none;
+    color: var(--cor-azul);
+    font-size: 2rem;
+    font-family: var(--fonte-secundária);
+    border-left: solid;
+    padding-left: 0.3em;
+}
+
+.links__menu-categorias:hover{
+    color: var(--cor-dourado);
+}
+
+#campo-pesquisa-produtos{
+    border-radius: 10px;
+    border: 5px double var(--cor-azul);
+    padding: 0.5em 5%;
+    padding-left: 55px;
+    background-color: #dac88d;
+    background-image: url(/img/lupa.png);
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+    background-position-y: 5px;
+    caret-color: white;
+}
+
+#campo-pesquisa-produtos::placeholder{
+    color: white;
+    opacity: 1;
+    position: absolute;
+    left: 55px;
+}
+
+#campo-pesquisa-produtos::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+.classicos{
+    padding-top: 90px;
 }
 
 .titulo-sessao {

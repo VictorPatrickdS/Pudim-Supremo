@@ -2,7 +2,7 @@
 main {
     padding-top: 18em;
     margin: 0 6%;
-    
+    flex-grow: 1;
 }
 
 .elementos-coluna-informacoes{
