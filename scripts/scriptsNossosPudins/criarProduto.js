@@ -20,7 +20,6 @@ export async function criarArrayProduto(){
             pGrande: pGrande.trim(),
             vendidos: parseInt(vendidos)
         })
-        
     }
 
     return produtosDB

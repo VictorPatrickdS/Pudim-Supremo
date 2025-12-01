@@ -1,8 +1,7 @@
 @import url(/styles/header.css);
 @import url(/styles/rodape.css);
-@import url(/styles/styleHomePage/conteúdo.css);
-@import url(/styles/styleHomePage/carroselstylein.css);
-@import url(/styles/styleNossosPudins/nossosPudins.css);
+@import url(/styles/styleIndex/index.css);
+@import url(/styles/styleProdutos/produtos.css);
 
 
 :root {

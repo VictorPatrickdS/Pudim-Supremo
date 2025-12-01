@@ -1,0 +1,58 @@
+@import url(cardsProdutos.css);
+@import url(menuCategorias/categorias.css);
+@import url(menuCategorias/campoPesquisa.css);
+
+.main__nossos-pudins {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9.5em;
+    margin: 0 6%;
+    gap: 2em;
+}
+
+.classicos{
+    padding-top: 8em;
+}
+
+.titulo-secao {
+    font-family: var(--fonte-secundária);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.separacao_card-tipos-produto {
+    margin: .3em 0 1em 0;
+}
+
+.separacao_secoes {
+    margin: 1em 0;
+}
+
+.checkbox__menu-hamburguer__categorias{
+    display: none;
+}
+
+.icone__menu-hamburguer__categorias{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .main__nossos-pudins {
+        padding-top: 8em;
+    }
+    
+    .classicos{
+        padding-top: 12em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main__nossos-pudins {
+        padding-top: 3em;
+    }
+
+    .classicos{
+        padding-top: 8em;
+    }
+}

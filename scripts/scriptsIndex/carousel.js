@@ -1,7 +1,5 @@
 import {criarArrayProduto} from '../scriptsNossosPudins/criarProduto.js'
 
-
-
 function criarSlide(arrayProdutos, idCarrosel, titulo){
     const slideCarrosel = document.getElementById(idCarrosel)
 

@@ -40,5 +40,4 @@ export async function ativarCampoPesquisa(){
 
         abreMenuPrecos()
     })
-
 }

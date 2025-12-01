@@ -1,0 +1,33 @@
+.criar-receita{
+    padding: 10% 0 ;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.criar-receita__link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--cor-dourado);
+    border: 5px double var(--cor-dourado);
+    border-radius: 8px;
+    width: 30%;
+    padding: 1em 1em;
+    background-color: var(--cor-azul);
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .criar-receita{
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .criar-receita__link{
+        margin: auto;
+        width: auto;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    }
+}
